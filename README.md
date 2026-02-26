@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">🔍 Scanner</h1>
+  <h1 align="center">🔍 SubScope</h1>
   <p align="center">
     <b>A modular, multi-technique subdomain discovery & attack surface mapping toolkit</b>
   </p>
@@ -12,7 +12,7 @@
 
 ---
 
-Scanner combines **6 enumeration engines**, **50+ subdomain takeover signatures**, **ASN intelligence**, and **hierarchy visualization** into a single, threadable CLI. Think of it as your personal recon pipeline — passive OSINT when you want stealth, active bruteforce when you need depth, and post-discovery analysis all in one place.
+SubScope combines **6 enumeration engines**, **50+ subdomain takeover signatures**, **ASN intelligence**, and **hierarchy visualization** into a single, threadable CLI. Think of it as your personal recon pipeline — passive OSINT when you want stealth, active bruteforce when you need depth, and post-discovery analysis all in one place.
 
 ## ⚡ Features at a Glance
 
@@ -34,8 +34,8 @@ Scanner combines **6 enumeration engines**, **50+ subdomain takeover signatures*
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/scanner.git
-cd scanner
+git clone https://github.com/xV4L3x/sub-scope.git
+cd sub-scope
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -201,9 +201,9 @@ python main.py dns san -i <domains_file> [-mT <threads>]
 ```
 
 
-## 🧩 Extending Scanner
+## 🧩 Extending SubScope
 
-Scanner's architecture is designed for easy extension:
+SubScope's architecture is designed for easy extension:
 
 - **Add a new enumeration technique** — Create a module in `modes/dns/enumeration/`, implement a function with the signature `(args, domain, max_threads)`, register it in `enumeration/main.py`
 - **Add a new DNS aggregator** — Drop a module in `dns_aggregators/`, implement `(domain, args, url)`, register in `dns_aggregators/main.py`
